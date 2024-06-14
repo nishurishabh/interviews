@@ -60,4 +60,4 @@ Most optimal solution
 TC: O(N) - iterating the array once.
 SC: O(N) - storing the map
 
-*.
+*/
