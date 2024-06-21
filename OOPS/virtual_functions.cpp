@@ -9,7 +9,9 @@ class Shape {
 class Circle: public Shape {
   int radius;
   public:
-    Circle(int r) : radius(r) {}
+    Circle(int r) {
+        radius = r;
+    }
     double area() override {
       return 3.14*radius*radius;
     }
@@ -24,6 +26,7 @@ class Rectangle: public Shape {
   int length;
   int breadth;
   public:
+    // different way of writing constructor
     Rectangle(int l, int b) : length(l), breadth(b) {}
     double area() override {
       return length * breadth;
